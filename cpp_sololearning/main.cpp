@@ -19,7 +19,17 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-    cout <<"Welcome "<<endl;
+    cout << "***Welcome to CCPL training course*** \n"
+            << "1. Products\n"
+            << "2. Services\n"
+            << "3. Exit";
+
     return 0;
 }
 
+void product()
+{
+    string // <editor-fold defaultstate="collapsed" desc="comment">
+    productsList// </editor-fold>
+;
+}
