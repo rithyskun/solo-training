@@ -13,15 +13,32 @@
 
 #include <cstdlib>
 #include <iostream>
+
 using namespace std;
+int menu;
 
 int main(int argc, char** argv) {
-    cout << "***Welcome to CCPL training course*** \n"
+    cout << "*** Welcome to CCPL training course *** \n"
             << "1. Products\n"
             << "2. Services\n"
             << "3. Support \n"
-            << "4. Exit";
-
+            << "4. Exit\n"
+            <<"Please choice number: ";
+    cin>>menu;
+    switch (menu) {
+        case 1:
+            cout << "Case 1";
+            break;
+        case 2:
+            cout << "Case 2";
+            break;
+        case 3:
+            cout << "Case 3";
+            break;
+        default:
+            cout << "Close";
+            break;
+    }
+    
     return 0;
 }
-
