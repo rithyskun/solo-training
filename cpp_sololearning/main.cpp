@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /* 
  * File:   main.cpp
@@ -14,25 +9,38 @@
 #include <cstdlib>
 #include <iostream>
 
-
 using namespace std;
-int menu;
 
 void products() {
     cout << "Product 1";
+
 }
 
 void services() {
-    cout << "Service 1";
+    int x;
+    int y;
+    int array[8][8]; // Declares an array like a chessboard
+
+    for (x = 0; x < 8; x++) {
+        for (y = 0; y < 8; y++)
+            array[x][y] = x * y; // Set each element to a value
+    }
+    cout << "Array Indices:\n";
+    for (x = 0; x < 8; x++) {
+        for (y = 0; y < 8; y++)
+            cout << "[" << x << "][" << y << "]=" << array[x][y] << " ";
+        cout << "\n";
+    }
 }
+
 
 void supports() {
     cout << "Support 1";
 }
 
 int main() {
-
-    cout << "*** Welcome to CCPL training course *** \n"
+    int menu;
+    cout << "*** Welcome to training course *** \n"
             << "1. Products\n"
             << "2. Services\n"
             << "3. Support \n"
